@@ -162,7 +162,7 @@
             java.version dictates what version of Java to build for.
             This sets the minimum java version required to run the game.
         -->
-        <java.version>11</java.version>
+        <java.version>17</java.version>
         <mage-version>1.4.50</mage-version>
         <argLine>-Dfile.encoding=UTF-8</argLine>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

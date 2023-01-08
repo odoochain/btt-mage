@@ -1,0 +1,3 @@
+INFO  2023-01-08 17:14:22,064 Starting MAGE server console version 1.4.50-V2 (build: runtime)                            =>[main] ConsoleFrame.main 
+INFO  2023-01-08 17:14:22,067 Logging level: INFO                                                                        =>[main] ConsoleFrame.main 
+INFO  2023-01-08 17:14:23,889 Started MAGE server console                                                                =>[AWT-EventQueue-0] ConsoleFrame.lambda$main$3 

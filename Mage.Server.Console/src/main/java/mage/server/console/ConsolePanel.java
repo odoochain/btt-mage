@@ -88,225 +88,245 @@
      @SuppressWarnings("unchecked")
      // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
      private void initComponents() {
+         jSplitPane1 = new JSplitPane();
+         jPanel1 = new JPanel();
+         jPanel3 = new JPanel();
+         jScrollPane1 = new JScrollPane();
+         tblUsers = new JTable();
+         jPanel4 = new JPanel();
+         btnDisconnect = new JButton();
+         btnEndSession = new JButton();
+         btnMuteUser = new JButton();
+         btnDeActivate = new JButton();
+         btnLockUser = new JButton();
+         lblMinutes = new JLabel();
+         spinnerMuteDurationMinutes = new JSpinner();
+         jPanel2 = new JPanel();
+         jPanel5 = new JPanel();
+         jScrollPane2 = new JScrollPane();
+         tblTables = new JTable();
+         jPanel6 = new JPanel();
+         btnRemoveTable = new JButton();
+         jUserName = new JTextField();
+         jLabel1 = new JLabel();
 
-         jSplitPane1 = new javax.swing.JSplitPane();
-         jPanel1 = new javax.swing.JPanel();
-         jPanel3 = new javax.swing.JPanel();
-         jScrollPane1 = new javax.swing.JScrollPane();
-         tblUsers = new javax.swing.JTable();
-         jPanel4 = new javax.swing.JPanel();
-         btnDisconnect = new javax.swing.JButton();
-         btnEndSession = new javax.swing.JButton();
-         btnMuteUser = new javax.swing.JButton();
-         btnDeActivate = new javax.swing.JButton();
-         btnLockUser = new javax.swing.JButton();
-         lblMinutes = new javax.swing.JLabel();
-         spinnerMuteDurationMinutes = new javax.swing.JSpinner();
-         jPanel2 = new javax.swing.JPanel();
-         jPanel5 = new javax.swing.JPanel();
-         jScrollPane2 = new javax.swing.JScrollPane();
-         tblTables = new javax.swing.JTable();
-         jPanel6 = new javax.swing.JPanel();
-         btnRemoveTable = new javax.swing.JButton();
-         jUserName = new javax.swing.JTextField();
-         jLabel1 = new javax.swing.JLabel();
+         //======== this ========
 
-         jSplitPane1.setDividerLocation(250);
-         jSplitPane1.setResizeWeight(0.5);
+         //======== jSplitPane1 ========
+         {
+             jSplitPane1.setDividerLocation(250);
+             jSplitPane1.setResizeWeight(0.5);
 
-         tblUsers.setModel(tableUserModel);
-         jScrollPane1.setViewportView(tblUsers);
+             //======== jPanel1 ========
+             {
 
-         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-         jPanel3.setLayout(jPanel3Layout);
-         jPanel3Layout.setHorizontalGroup(
-                 jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-         );
-         jPanel3Layout.setVerticalGroup(
-                 jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 462, Short.MAX_VALUE)
-         );
+                 //======== jPanel3 ========
+                 {
 
-         jPanel4.setVerifyInputWhenFocusTarget(false);
+                     //======== jScrollPane1 ========
+                     {
 
-         btnDisconnect.setText("Disconnect");
-         btnDisconnect.addActionListener(new java.awt.event.ActionListener() {
-             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                 btnDisconnectActionPerformed(evt);
-             }
-         });
+                         //---- tblUsers ----
+                         tblUsers.setModel(tableUserModel);
+                         jScrollPane1.setViewportView(tblUsers);
+                     }
 
-         btnEndSession.setText("End session");
-         btnEndSession.addActionListener(new java.awt.event.ActionListener() {
-             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                 btnEndSessionActionPerformed(evt);
-             }
-         });
+                     GroupLayout jPanel3Layout = new GroupLayout(jPanel3);
+                     jPanel3.setLayout(jPanel3Layout);
+                     jPanel3Layout.setHorizontalGroup(
+                         jPanel3Layout.createParallelGroup()
+                             .addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+                     );
+                     jPanel3Layout.setVerticalGroup(
+                         jPanel3Layout.createParallelGroup()
+                             .addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 462, Short.MAX_VALUE)
+                     );
+                 }
 
-         btnMuteUser.setText("Mute user");
-         btnMuteUser.setActionCommand("Mute 1h");
-         btnMuteUser.addActionListener(new java.awt.event.ActionListener() {
-             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                 btnMuteUserActionPerformed(evt);
-             }
-         });
+                 //======== jPanel4 ========
+                 {
+                     jPanel4.setVerifyInputWhenFocusTarget(false);
 
-         btnDeActivate.setText("(de)activate");
-         btnDeActivate.setActionCommand("Mute 1h");
-         btnDeActivate.addActionListener(new java.awt.event.ActionListener() {
-             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                 btnDeActivateActionPerformed(evt);
-             }
-         });
+                     //---- btnDisconnect ----
+                     btnDisconnect.setText("Disconnect");
+                     btnDisconnect.addActionListener(e -> btnDisconnectActionPerformed(e));
 
-         btnLockUser.setText("Lock user");
-         btnLockUser.setActionCommand("Mute 1h");
-         btnLockUser.addActionListener(new java.awt.event.ActionListener() {
-             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                 btnLockUserActionPerformed(evt);
-             }
-         });
+                     //---- btnEndSession ----
+                     btnEndSession.setText("End session");
+                     btnEndSession.addActionListener(e -> btnEndSessionActionPerformed(e));
 
-         lblMinutes.setText("Minutes");
+                     //---- btnMuteUser ----
+                     btnMuteUser.setText("Mute user");
+                     btnMuteUser.setActionCommand("Mute 1h");
+                     btnMuteUser.addActionListener(e -> btnMuteUserActionPerformed(e));
 
-         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-         jPanel4.setLayout(jPanel4Layout);
-         jPanel4Layout.setHorizontalGroup(
-                 jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                         .addGroup(jPanel4Layout.createSequentialGroup()
+                     //---- btnDeActivate ----
+                     btnDeActivate.setText("(de)activate");
+                     btnDeActivate.setActionCommand("Mute 1h");
+                     btnDeActivate.addActionListener(e -> btnDeActivateActionPerformed(e));
+
+                     //---- btnLockUser ----
+                     btnLockUser.setText("Lock user");
+                     btnLockUser.setActionCommand("Mute 1h");
+                     btnLockUser.addActionListener(e -> btnLockUserActionPerformed(e));
+
+                     //---- lblMinutes ----
+                     lblMinutes.setText("Minutes");
+
+                     GroupLayout jPanel4Layout = new GroupLayout(jPanel4);
+                     jPanel4.setLayout(jPanel4Layout);
+                     jPanel4Layout.setHorizontalGroup(
+                         jPanel4Layout.createParallelGroup()
+                             .addGroup(jPanel4Layout.createSequentialGroup()
                                  .addContainerGap()
                                  .addComponent(btnDisconnect)
-                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                         .addGroup(jPanel4Layout.createSequentialGroup()
-                                                 .addComponent(btnEndSession)
-                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                 .addComponent(btnMuteUser))
-                                         .addGroup(jPanel4Layout.createSequentialGroup()
-                                                 .addComponent(btnDeActivate)
-                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                 .addComponent(btnLockUser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                 .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                 .addGroup(jPanel4Layout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
+                                     .addGroup(jPanel4Layout.createSequentialGroup()
+                                         .addComponent(btnEndSession)
+                                         .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                         .addComponent(btnMuteUser))
+                                     .addGroup(jPanel4Layout.createSequentialGroup()
+                                         .addComponent(btnDeActivate)
+                                         .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                         .addComponent(btnLockUser, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                 .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                  .addComponent(lblMinutes)
-                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                 .addComponent(spinnerMuteDurationMinutes, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-         );
-         jPanel4Layout.setVerticalGroup(
-                 jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                         .addGroup(jPanel4Layout.createSequentialGroup()
-                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                         .addGroup(jPanel4Layout.createSequentialGroup()
-                                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                         .addComponent(btnDisconnect)
-                                                         .addComponent(btnEndSession)
-                                                         .addComponent(btnMuteUser))
-                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                         .addComponent(btnDeActivate)
-                                                         .addComponent(btnLockUser)))
-                                         .addGroup(jPanel4Layout.createSequentialGroup()
-                                                 .addGap(16, 16, 16)
-                                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                         .addComponent(lblMinutes)
-                                                         .addComponent(spinnerMuteDurationMinutes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                 .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                                 .addComponent(spinnerMuteDurationMinutes, GroupLayout.PREFERRED_SIZE, 64, GroupLayout.PREFERRED_SIZE)
+                                 .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                     );
+                     jPanel4Layout.setVerticalGroup(
+                         jPanel4Layout.createParallelGroup()
+                             .addGroup(jPanel4Layout.createSequentialGroup()
+                                 .addGroup(jPanel4Layout.createParallelGroup()
+                                     .addGroup(jPanel4Layout.createSequentialGroup()
+                                         .addGroup(jPanel4Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                                             .addComponent(btnDisconnect)
+                                             .addComponent(btnEndSession)
+                                             .addComponent(btnMuteUser))
+                                         .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                         .addGroup(jPanel4Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                                             .addComponent(btnDeActivate)
+                                             .addComponent(btnLockUser)))
+                                     .addGroup(jPanel4Layout.createSequentialGroup()
+                                         .addGap(16, 16, 16)
+                                         .addGroup(jPanel4Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                                             .addComponent(lblMinutes)
+                                             .addComponent(spinnerMuteDurationMinutes, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))))
                                  .addContainerGap())
-         );
+                     );
+                 }
 
-         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-         jPanel1.setLayout(jPanel1Layout);
-         jPanel1Layout.setHorizontalGroup(
-                 jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                         .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                         .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-         );
-         jPanel1Layout.setVerticalGroup(
-                 jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                 .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                 .addGap(0, 0, 0)
-                                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                 .addGap(0, 0, 0))
-         );
-
-         jSplitPane1.setLeftComponent(jPanel1);
-
-         tblTables.setModel(tableTableModel);
-         jScrollPane2.setViewportView(tblTables);
-
-         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-         jPanel5.setLayout(jPanel5Layout);
-         jPanel5Layout.setHorizontalGroup(
-                 jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                         .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 606, Short.MAX_VALUE)
-         );
-         jPanel5Layout.setVerticalGroup(
-                 jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                         .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 459, Short.MAX_VALUE)
-         );
-
-         btnRemoveTable.setText("Remove Table");
-         btnRemoveTable.addActionListener(new java.awt.event.ActionListener() {
-             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                 btnRemoveTableActionPerformed(evt);
+                 GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
+                 jPanel1.setLayout(jPanel1Layout);
+                 jPanel1Layout.setHorizontalGroup(
+                     jPanel1Layout.createParallelGroup()
+                         .addComponent(jPanel3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                         .addComponent(jPanel4, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                 );
+                 jPanel1Layout.setVerticalGroup(
+                     jPanel1Layout.createParallelGroup()
+                         .addGroup(GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                             .addComponent(jPanel3, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                             .addGap(0, 0, 0)
+                             .addComponent(jPanel4, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)
+                             .addGap(0, 0, 0))
+                 );
              }
-         });
+             jSplitPane1.setLeftComponent(jPanel1);
 
-         jUserName.setName("Username"); // NOI18N
+             //======== jPanel2 ========
+             {
 
-         jLabel1.setText("Username:");
+                 //======== jPanel5 ========
+                 {
 
-         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-         jPanel6.setLayout(jPanel6Layout);
-         jPanel6Layout.setHorizontalGroup(
-                 jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                         .addGroup(jPanel6Layout.createSequentialGroup()
+                     //======== jScrollPane2 ========
+                     {
+
+                         //---- tblTables ----
+                         tblTables.setModel(tableTableModel);
+                         jScrollPane2.setViewportView(tblTables);
+                     }
+
+                     GroupLayout jPanel5Layout = new GroupLayout(jPanel5);
+                     jPanel5.setLayout(jPanel5Layout);
+                     jPanel5Layout.setHorizontalGroup(
+                         jPanel5Layout.createParallelGroup()
+                             .addComponent(jScrollPane2, GroupLayout.DEFAULT_SIZE, 606, Short.MAX_VALUE)
+                     );
+                     jPanel5Layout.setVerticalGroup(
+                         jPanel5Layout.createParallelGroup()
+                             .addComponent(jScrollPane2, GroupLayout.DEFAULT_SIZE, 459, Short.MAX_VALUE)
+                     );
+                 }
+
+                 //======== jPanel6 ========
+                 {
+
+                     //---- btnRemoveTable ----
+                     btnRemoveTable.setLabel("Remove Table");
+                     btnRemoveTable.addActionListener(e -> btnRemoveTableActionPerformed(e));
+
+                     //---- jUserName ----
+                     jUserName.setName("Username");
+
+                     //---- jLabel1 ----
+                     jLabel1.setText("Username:");
+
+                     GroupLayout jPanel6Layout = new GroupLayout(jPanel6);
+                     jPanel6.setLayout(jPanel6Layout);
+                     jPanel6Layout.setHorizontalGroup(
+                         jPanel6Layout.createParallelGroup()
+                             .addGroup(jPanel6Layout.createSequentialGroup()
                                  .addContainerGap()
                                  .addComponent(jLabel1)
-                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                 .addComponent(jUserName, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                 .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                 .addComponent(jUserName, GroupLayout.PREFERRED_SIZE, 134, GroupLayout.PREFERRED_SIZE)
+                                 .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                                  .addComponent(btnRemoveTable)
-                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-         );
-         jPanel6Layout.setVerticalGroup(
-                 jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                         .addGroup(jPanel6Layout.createSequentialGroup()
+                                 .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                     );
+                     jPanel6Layout.setVerticalGroup(
+                         jPanel6Layout.createParallelGroup()
+                             .addGroup(jPanel6Layout.createSequentialGroup()
                                  .addContainerGap(20, Short.MAX_VALUE)
-                                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                         .addComponent(btnRemoveTable)
-                                         .addComponent(jUserName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                         .addComponent(jLabel1))
+                                 .addGroup(jPanel6Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                                     .addComponent(btnRemoveTable)
+                                     .addComponent(jUserName, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                     .addComponent(jLabel1))
                                  .addContainerGap())
-         );
+                     );
+                 }
 
-         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-         jPanel2.setLayout(jPanel2Layout);
-         jPanel2Layout.setHorizontalGroup(
-                 jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                         .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                         .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-         );
-         jPanel2Layout.setVerticalGroup(
-                 jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                 .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-         );
+                 GroupLayout jPanel2Layout = new GroupLayout(jPanel2);
+                 jPanel2.setLayout(jPanel2Layout);
+                 jPanel2Layout.setHorizontalGroup(
+                     jPanel2Layout.createParallelGroup()
+                         .addComponent(jPanel5, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                         .addComponent(jPanel6, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                 );
+                 jPanel2Layout.setVerticalGroup(
+                     jPanel2Layout.createParallelGroup()
+                         .addGroup(GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                             .addComponent(jPanel5, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                             .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                             .addComponent(jPanel6, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                 );
+             }
+             jSplitPane1.setRightComponent(jPanel2);
+         }
 
-         jSplitPane1.setRightComponent(jPanel2);
-
-         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-         this.setLayout(layout);
+         GroupLayout layout = new GroupLayout(this);
+         setLayout(layout);
          layout.setHorizontalGroup(
-                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                         .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+             layout.createParallelGroup()
+                 .addComponent(jSplitPane1, GroupLayout.Alignment.TRAILING)
          );
          layout.setVerticalGroup(
-                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                         .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 521, Short.MAX_VALUE)
+             layout.createParallelGroup()
+                 .addComponent(jSplitPane1, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 521, Short.MAX_VALUE)
          );
      }// </editor-fold>//GEN-END:initComponents
 
@@ -377,27 +397,27 @@
      }//GEN-LAST:event_btnRemoveTableActionPerformed
 
      // Variables declaration - do not modify//GEN-BEGIN:variables
-     private javax.swing.JButton btnDeActivate;
-     private javax.swing.JButton btnDisconnect;
-     private javax.swing.JButton btnEndSession;
-     private javax.swing.JButton btnLockUser;
-     private javax.swing.JButton btnMuteUser;
-     private javax.swing.JButton btnRemoveTable;
-     private javax.swing.JLabel jLabel1;
-     private javax.swing.JPanel jPanel1;
-     private javax.swing.JPanel jPanel2;
-     private javax.swing.JPanel jPanel3;
-     private javax.swing.JPanel jPanel4;
-     private javax.swing.JPanel jPanel5;
-     private javax.swing.JPanel jPanel6;
-     private javax.swing.JScrollPane jScrollPane1;
-     private javax.swing.JScrollPane jScrollPane2;
-     private javax.swing.JSplitPane jSplitPane1;
-     private javax.swing.JTextField jUserName;
-     private javax.swing.JLabel lblMinutes;
-     private javax.swing.JSpinner spinnerMuteDurationMinutes;
-     private javax.swing.JTable tblTables;
-     private javax.swing.JTable tblUsers;
+     private JSplitPane jSplitPane1;
+     private JPanel jPanel1;
+     private JPanel jPanel3;
+     private JScrollPane jScrollPane1;
+     private JTable tblUsers;
+     private JPanel jPanel4;
+     private JButton btnDisconnect;
+     private JButton btnEndSession;
+     private JButton btnMuteUser;
+     private JButton btnDeActivate;
+     private JButton btnLockUser;
+     private JLabel lblMinutes;
+     private JSpinner spinnerMuteDurationMinutes;
+     private JPanel jPanel2;
+     private JPanel jPanel5;
+     private JScrollPane jScrollPane2;
+     private JTable tblTables;
+     private JPanel jPanel6;
+     private JButton btnRemoveTable;
+     private JTextField jUserName;
+     private JLabel jLabel1;
      // End of variables declaration//GEN-END:variables
  }
 

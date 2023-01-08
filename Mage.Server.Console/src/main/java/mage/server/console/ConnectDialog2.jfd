@@ -1,0 +1,129 @@
+JFDML JFormDesigner: "8.0.1.0.199" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {seq t {comp lblStatus::::271:x, space :::p, comp btnConnect:::p::p, space :::p, comp btnCancel:::p::p}, comp pnlProxySettings::l:::x, seq l {comp lblProxyType:::p::p, space :::p, par l {comp chkAutoConnect::l::383:x, comp cbProxyType::l:p:126:p}}, seq l {space :p:6:p, par t {comp lblPassword::t:p::p, comp lblServer:::p::p, comp lblPort::t:p::p}, space :::p, par t {comp txtPassword::::359:x, seq l {comp txtPort:::p:71:p, space :p:131:p}, seq t {comp txtServer::::288:x, space :::p, comp jButton1:::p::p}}}}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :p::p, par b {comp lblServer::b:p::p, comp txtServer::b:p::p, comp jButton1::b:p::p}, space :p::p, par b {comp txtPort::b:p::p, comp lblPort::b:p::p}, space :::p, par b {comp txtPassword::b:p::p, comp lblPassword::b:p::p}, space :::p, comp chkAutoConnect:::p::p, space :p::p, par b {comp cbProxyType::b:p::p, comp lblProxyType::b:p::p}, space :::p, comp pnlProxySettings:::::x, space :::p, par b {comp btnCancel::b:p::p, comp btnConnect::b:p::p, comp lblStatus::b:p::p}, space :::p}}"
+		} ) {
+			name: "this"
+			"title": "Connect"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtServer"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblServer"
+				"labelFor": new FormReference( "txtServer" )
+				"text": "Server:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblPort"
+				"labelFor": new FormReference( "txtPort" )
+				"text": "Port:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtPort"
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyTyped", "keyTyped", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnConnect"
+				"text": "Connect"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnConnectActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnCancel"
+				"text": "Cancel"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnCancelActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "chkAutoConnect"
+				"text": "Automatically connect to this server next time"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "chkAutoConnectActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "jButton1"
+				"text": "Find..."
+				"toolTipText": "Find public server"
+				"name": "findServerBtn"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "findPublicServerActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cbProxyType"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cbProxyTypeActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblProxyType"
+				"labelFor": new FormReference( "cbProxyType" )
+				"text": "Proxy:"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {comp pnlProxyAuth::l:::x, comp pnlProxy::l:::x}"
+				"$verticalGroup": "par l {seq t {comp pnlProxy:::p::p, space :::x, comp pnlProxyAuth:::p::p, space :::p}}"
+			} ) {
+				name: "pnlProxySettings"
+				"border": new javax.swing.border.EtchedBorder( 1, null, null )
+				"minimumSize": new java.awt.Dimension( 0, 0 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, par t {comp lblProxyServer:::p:57:p, comp lblProxyPort:::p::p}, space :::p, par t {comp txtProxyPort::l:p:71:p, comp txtProxyServer::::334:x}, space :::p}}"
+					"$verticalGroup": "par l {seq l {space :::p, par l {comp lblProxyServer:::p::p, comp txtProxyServer:::p::p}, space :::p, par b {comp txtProxyPort::b:p::p, comp lblProxyPort::b:p::p}, space :::x}}"
+				} ) {
+					name: "pnlProxy"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lblProxyServer"
+						"horizontalAlignment": 4
+						"labelFor": new FormReference( "txtProxyServer" )
+						"text": "Server:"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtProxyServer"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lblProxyPort"
+						"labelFor": new FormReference( "txtProxyPort" )
+						"text": "Port:"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtProxyPort"
+						addEvent( new FormEvent( "java.awt.event.KeyListener", "keyTyped", "txtProxyPortkeyTyped", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :::p, par l {comp lblProxyPassword:::p::p, comp lblProxyUserName::l:p::p}, space :::p, par l {comp txtPasswordField::::335:x:1, comp txtProxyUserName::l::335:x:1}, space :::p}}"
+					"$verticalGroup": "par l {seq t {par b {comp txtProxyUserName::b:p::p, comp lblProxyUserName::b:p::p}, space ::8:x, par b {comp txtPasswordField::b:p::p, comp lblProxyPassword::b:p::p}, space :::p}}"
+				} ) {
+					name: "pnlProxyAuth"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lblProxyUserName"
+						"labelFor": new FormReference( "txtProxyUserName" )
+						"text": "User Name:"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtProxyUserName"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lblProxyPassword"
+						"text": "Password:"
+					} )
+					add( new FormComponent( "javax.swing.JPasswordField" ) {
+						name: "txtPasswordField"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "txtPasswordFieldActionPerformed", true ) )
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblPassword"
+				"labelFor": new FormReference( "txtPassword" )
+				"text": "Password:"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "txtPassword"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblStatus"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

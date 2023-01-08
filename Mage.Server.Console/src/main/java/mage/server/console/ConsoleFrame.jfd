@@ -1,0 +1,46 @@
+JFDML JFormDesigner: "8.0.1.0.199" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp jToolBar1::l::933:x, comp consolePanel1::l::933:x}"
+			"$verticalGroup": "par l {seq l {comp jToolBar1:::p:25:p, space :p:0:p, comp consolePanel1::::432:x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 0
+			add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+				name: "jToolBar1"
+				"floatable": false
+				"rollover": true
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnConnect"
+					"text": "Connect"
+					"focusable": false
+					"horizontalTextPosition": 0
+					"verticalTextPosition": 3
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnConnectActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSendMessage"
+					"actionCommand": "SendMessage"
+					"enabled": false
+					"focusable": false
+					"horizontalTextPosition": 0
+					"label": "Send Message"
+					"verticalTextPosition": 3
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSendMessageActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblStatus"
+					"text": "Not Connected"
+				} )
+			} )
+			add( new FormComponent( "mage.server.console.ConsolePanel" ) {
+				name: "consolePanel1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

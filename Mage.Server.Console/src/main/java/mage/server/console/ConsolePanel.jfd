@@ -1,0 +1,127 @@
+JFDML JFormDesigner: "8.0.1.0.199" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp jSplitPane1::t:::x}"
+			"$verticalGroup": "par l {comp jSplitPane1::t::521:x}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+				name: "jSplitPane1"
+				"dividerLocation": 250
+				"resizeWeight": 0.5
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {comp jPanel3::l:::x, comp jPanel4::l:::x}"
+					"$verticalGroup": "par l {seq t {comp jPanel3:::::x, space :0:0:p, comp jPanel4:::p:57:p, space :0:0:p}}"
+				} ) {
+					name: "jPanel1"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {comp jScrollPane1::l::0:x}"
+						"$verticalGroup": "par l {comp jScrollPane1::l::462:x}"
+					} ) {
+						name: "jPanel3"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "jScrollPane1"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "tblUsers"
+								auxiliary() {
+									"JavaCodeGenerator.preInitCode": "${field}.setModel(tableUserModel);"
+								}
+							} )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {space :::p, comp btnDisconnect:::p::p, space :::p, par l:::p {seq {comp btnEndSession:::p::p, space :::p, comp btnMuteUser:::p::p}, seq {comp btnDeActivate:::p::p, space :::p, comp btnLockUser:::::x}}, space :::p, comp lblMinutes:::p::p, space u:::p, comp spinnerMuteDurationMinutes:::p:64:p, space :::x}}"
+						"$verticalGroup": "par l {seq {par l {seq {par b {comp btnDisconnect::b:p::p, comp btnEndSession::b:p::p, comp btnMuteUser::b:p::p}, space :::p, par b {comp btnDeActivate::b:p::p, comp btnLockUser::b:p::p}}, seq l {space :p:16:p, par b {comp lblMinutes::b:p::p, comp spinnerMuteDurationMinutes::b:p::p}}}, space :::p}}"
+					} ) {
+						name: "jPanel4"
+						"verifyInputWhenFocusTarget": false
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btnDisconnect"
+							"text": "Disconnect"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDisconnectActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btnEndSession"
+							"text": "End session"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnEndSessionActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btnMuteUser"
+							"text": "Mute user"
+							"actionCommand": "Mute 1h"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnMuteUserActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btnDeActivate"
+							"text": "(de)activate"
+							"actionCommand": "Mute 1h"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDeActivateActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btnLockUser"
+							"text": "Lock user"
+							"actionCommand": "Mute 1h"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnLockUserActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "lblMinutes"
+							"text": "Minutes"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "spinnerMuteDurationMinutes"
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "left"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {comp jPanel5::l:::x, comp jPanel6::l:::x}"
+					"$verticalGroup": "par l {seq t {comp jPanel5:::::x, space :::p, comp jPanel6:::p::p}}"
+				} ) {
+					name: "jPanel2"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {comp jScrollPane2::l::606:x}"
+						"$verticalGroup": "par l {comp jScrollPane2::l::459:x}"
+					} ) {
+						name: "jPanel5"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "jScrollPane2"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "tblTables"
+								auxiliary() {
+									"JavaCodeGenerator.preInitCode": "${field}.setModel(tableTableModel);"
+								}
+							} )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :::p, comp jLabel1:::p::p, space :::p, comp jUserName:::p:134:p, space u:::p, comp btnRemoveTable:::p::p, space :::x}}"
+						"$verticalGroup": "par l {seq {space ::20:x, par b {comp btnRemoveTable::b:p::p, comp jUserName::b:p::p, comp jLabel1::b:p::p}, space :::p}}"
+					} ) {
+						name: "jPanel6"
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btnRemoveTable"
+							"label": "Remove Table"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnRemoveTableActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "jUserName"
+							"name": "Username"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "jLabel1"
+							"text": "Username:"
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "right"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
