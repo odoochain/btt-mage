@@ -1,0 +1,97 @@
+INFO  2023-01-08 09:00:25,871 Starting MAGE client version 1.4.50-V2 (build: runtime)                                    =>[main] MageFrame.main 
+INFO  2023-01-08 09:00:25,873 Logging level: INFO                                                                        =>[main] MageFrame.main 
+INFO  2023-01-08 09:00:25,874 Default charset: UTF-8                                                                     =>[main] MageFrame.main 
+INFO  2023-01-08 09:00:27,248 custom Java certificate file not found at: D:\Documents\Z-xiaozheng\btt_mage\cacerts       =>[AWT-EventQueue-0] MageFrame.<init> 
+INFO  2023-01-08 09:00:32,136 Using GUI theme: Default                                                                   =>[AWT-EventQueue-0] PreferencesDialog.getCurrentTheme 
+INFO  2023-01-08 09:00:32,213 Loading database...                                                                        =>[AWT-EventQueue-0] RepositoryUtil.bootstrapLocalDb 
+INFO  2023-01-08 09:00:33,502 DB: creating cards database (it can take few minutes)...                                   =>[AWT-EventQueue-0] MageFrame.<init> 
+INFO  2023-01-08 09:02:45,118 Starting MAGE client version 1.4.50-V2 (build: runtime)                                    =>[main] MageFrame.main 
+INFO  2023-01-08 09:02:45,121 Logging level: INFO                                                                        =>[main] MageFrame.main 
+INFO  2023-01-08 09:02:45,121 Default charset: UTF-8                                                                     =>[main] MageFrame.main 
+INFO  2023-01-08 09:02:45,432 custom Java certificate file not found at: D:\Documents\Z-xiaozheng\btt_mage\cacerts       =>[AWT-EventQueue-0] MageFrame.<init> 
+INFO  2023-01-08 09:02:46,645 Using GUI theme: Default                                                                   =>[AWT-EventQueue-0] PreferencesDialog.getCurrentTheme 
+INFO  2023-01-08 09:02:46,666 Loading database...                                                                        =>[AWT-EventQueue-0] RepositoryUtil.bootstrapLocalDb 
+INFO  2023-01-08 09:02:47,167 DB: creating cards database (it can take few minutes)...                                   =>[AWT-EventQueue-0] MageFrame.<init> 
+INFO  2023-01-08 09:04:07,880 Starting game                                                                              =>[main] StartMultiGamesTest.startMultiGames 
+INFO  2023-01-08 09:04:08,338 custom Java certificate file not found at: D:\Documents\Z-xiaozheng\btt_mage\cacerts       =>[AWT-EventQueue-0] MageFrame.<init> 
+INFO  2023-01-08 09:04:09,510 Using GUI theme: Default                                                                   =>[AWT-EventQueue-0] PreferencesDialog.getCurrentTheme 
+INFO  2023-01-08 09:04:09,532 Loading database...                                                                        =>[AWT-EventQueue-0] RepositoryUtil.bootstrapLocalDb 
+INFO  2023-01-08 09:04:10,013 DB: creating cards database (it can take few minutes)...                                   =>[AWT-EventQueue-0] MageFrame.<init> 
+INFO  2023-01-08 09:04:33,677 Starting game                                                                              =>[main] StartMultiGamesTest.startMultiGames 
+INFO  2023-01-08 09:04:34,030 custom Java certificate file not found at: D:\Documents\Z-xiaozheng\btt_mage\cacerts       =>[AWT-EventQueue-0] MageFrame.<init> 
+INFO  2023-01-08 09:04:35,273 Using GUI theme: Default                                                                   =>[AWT-EventQueue-0] PreferencesDialog.getCurrentTheme 
+INFO  2023-01-08 09:04:35,311 Loading database...                                                                        =>[AWT-EventQueue-0] RepositoryUtil.bootstrapLocalDb 
+INFO  2023-01-08 09:04:35,829 DB: creating cards database (it can take few minutes)...                                   =>[AWT-EventQueue-0] MageFrame.<init> 
+INFO  2023-01-08 09:05:28,197 DB: need to add 470 new sets                                                               =>[AWT-EventQueue-0] ExpansionRepository.lambda$saveSets$0 
+INFO  2023-01-08 09:06:39,277 DB: need to add 62634 new cards                                                            =>[AWT-EventQueue-0] CardRepository.lambda$saveCards$0 
+INFO  2023-01-08 09:06:49,735 Done.                                                                                      =>[AWT-EventQueue-0] MageFrame.<init> 
+INFO  2023-01-08 09:06:49,735 Images: search broken files...                                                             =>[AWT-EventQueue-0] MageFrame.<init> 
+INFO  2023-01-08 09:06:51,082 Loading symbols...                                                                         =>[AWT-EventQueue-0] ManaSymbols.loadImages 
+WARN  2023-01-08 09:06:51,132 Symbols can't be load for size 15: SVG fails - 52, GIF fails - 52                          =>[AWT-EventQueue-0] ManaSymbols.loadSymbolImages 
+WARN  2023-01-08 09:06:51,134 Symbols can't be load for size 25: SVG fails - 52, GIF fails - 52                          =>[AWT-EventQueue-0] ManaSymbols.loadSymbolImages 
+WARN  2023-01-08 09:06:51,136 Symbols can't be load for size 50: SVG fails - 52, GIF fails - 52                          =>[AWT-EventQueue-0] ManaSymbols.loadSymbolImages 
+INFO  2023-01-08 09:06:51,745 Loading plugins...                                                                         =>[AWT-EventQueue-0] Plugins.loadPlugins 
+INFO  2023-01-08 09:06:51,965 [Card plugin, version 0.7] has been loaded.                                                =>[AWT-EventQueue-0] CardPluginImpl.newPlugin 
+INFO  2023-01-08 09:06:51,975 [Theme plugin, version 0.5] has been loaded.                                               =>[AWT-EventQueue-0] ThemePluginImpl.newPlugin 
+INFO  2023-01-08 09:06:51,977 Done.                                                                                      =>[AWT-EventQueue-0] Plugins.loadPlugins 
+INFO  2023-01-08 09:07:04,287 Ho Ho Ho, Merry Christmas and a Happy New Year                                             =>[AWT-EventQueue-0] MageFrame.addMageLabel 
+INFO  2023-01-08 09:07:05,166 Client start up time: 1673140025 seconds                                                   =>[AWT-EventQueue-0] MageFrame.lambda$new$2 
+ERROR 2023-01-08 09:26:59,532 java.net.ConnectException: Connection timed out: connect                                   =>[AWT-EventQueue-0] ConnectDialog.chooseAndSetServerSettingsFromOther 
+java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1287)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1665)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1589)
+	at mage.client.dialog.ConnectDialog.chooseAndSetServerSettingsFromOther(ConnectDialog.java:153)
+	at mage.client.dialog.ConnectDialog.btnFindOtherActionPerformed(ConnectDialog.java:844)
+	at mage.client.dialog.ConnectDialog$13.actionPerformed(ConnectDialog.java:413)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2313)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:405)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:262)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:279)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6626)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3389)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6391)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5001)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4833)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4575)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2780)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4833)
+	at mage.client.dialog.MageDialog.startModal(MageDialog.java:174)
+	at mage.client.dialog.MageDialog.setVisible(MageDialog.java:103)
+	at mage.client.dialog.ConnectDialog.showDialog(ConnectDialog.java:83)
+	at mage.client.MageFrame.lambda$new$2(MageFrame.java:361)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:771)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:722)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:716)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:741)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)

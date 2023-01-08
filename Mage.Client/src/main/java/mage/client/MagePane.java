@@ -1,6 +1,8 @@
  package mage.client;
 
  import java.awt.*;
+import javax.swing.*;
+import javax.swing.GroupLayout;
 
  /**
   * @author BetaSteward_at_googlemail.com
@@ -62,8 +64,19 @@
      // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
      private void initComponents() {
 
+         //======== this ========
          setBorder(null);
 
+         GroupLayout layout = new GroupLayout(this);
+         setLayout(layout);
+         layout.setHorizontalGroup(
+             layout.createParallelGroup()
+                 .addGap(0, 765, Short.MAX_VALUE)
+         );
+         layout.setVerticalGroup(
+             layout.createParallelGroup()
+                 .addGap(0, 476, Short.MAX_VALUE)
+         );
      }// </editor-fold>//GEN-END:initComponents
 
      // Variables declaration - do not modify//GEN-BEGIN:variables

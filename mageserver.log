@@ -1,0 +1,4 @@
+INFO  2023-01-08 09:01:38,187 Starting MAGE server version 1.4.50-V2 (build: runtime)                                    =>[main] Main.main 
+INFO  2023-01-08 09:01:38,190 Logging level: INFO                                                                        =>[main] Main.main 
+INFO  2023-01-08 09:01:38,190 Default charset: UTF-8                                                                     =>[main] Main.main 
+INFO  2023-01-08 09:01:38,193 Reading configuration from path=config\config.xml                                          =>[main] Main.main 

@@ -1,0 +1,162 @@
+JFDML JFormDesigner: "8.0.1.0.199" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp desktopPane::l::838:x, comp mageToolbar::l:::x}"
+			"$verticalGroup": "par l {seq l {comp mageToolbar:::p::p, space :p:2:p, comp desktopPane::::145:x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 0
+			"minimumSize": new java.awt.Dimension( 1024, 768 )
+			add( new FormContainer( "javax.swing.JDesktopPane", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "desktopPane"
+				"background": new java.awt.Color( 204, 204, 204, 255 )
+				auxiliary() {
+					"JavaCodeGenerator.customCreateCode": "new MageJDesktop();"
+					"JavaCodeGenerator.variableModifiers": 10
+				}
+			} )
+			add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+				name: "mageToolbar"
+				"floatable": false
+				"rollover": true
+				"font": new java.awt.Font( "Segoe UI", 0, 48 )
+				"maximumSize": new java.awt.Dimension( 614, 60 )
+				"minimumSize": new java.awt.Dimension( 566, 60 )
+				"preferredSize": new java.awt.Dimension( 614, 60 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnPreferences"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/menu/preferences.png" )
+					"text": "Preferences"
+					"toolTipText": "By changing the settings in the preferences window you can adjust the look and behaviour of xmage."
+					"focusable": false
+					"horizontalTextPosition": 4
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnPreferencesActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparator4"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnConnect"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/menu/connect.png" )
+					"toolTipText": "Connect to or disconnect from a XMage server."
+					"focusable": false
+					"horizontalTextPosition": 4
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnConnectActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparator1"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnDeckEditor"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/menu/deck_editor.png" )
+					"text": "Deck Editor"
+					"toolTipText": "Start the deck editor to create or modify decks."
+					"focusable": false
+					"horizontalTextPosition": 4
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDeckEditorActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparator2"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnCollectionViewer"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/menu/collection.png" )
+					"text": "Card Viewer"
+					"toolTipText": "Card viewer to show the cards of sets. "
+					"focusable": false
+					"horizontalTextPosition": 4
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnCollectionViewerActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparator5"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSendFeedback"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/menu/feedback.png" )
+					"text": "Feedback"
+					"toolTipText": "Send some feedback to the developers."
+					"focusable": false
+					"horizontalTextPosition": 4
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSendFeedbackActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparator6"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSymbols"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/menu/symbol.png" )
+					"text": "Symbols"
+					"toolTipText": "<HTML>Load the mana and other card symbols from the internet.<br>\nOtherwise you only see the replacement sequence like {U} for blue mana symbol.<br>\nYou need to do that only once."
+					"focusable": false
+					"horizontalTextPosition": 4
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSymbolsActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparatorSymbols"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnImages"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/menu/images.png" )
+					"text": "Images"
+					"toolTipText": "<HTML>Load card images from external sources."
+					"focusable": false
+					"horizontalTextPosition": 4
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnImagesActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparatorImages"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnAbout"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/menu/about.png" )
+					"text": "About"
+					"toolTipText": "About app"
+					"focusable": false
+					"horizontalTextPosition": 4
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnAboutActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "jSeparator7"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnDebug"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/menu/connect.png" )
+					"text": "Debug"
+					"toolTipText": "Show debug tools"
+					"focusable": false
+					"verticalTextPosition": 3
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "btnDebugMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JToolBar$Separator" ) {
+					name: "separatorDebug"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jMemUsageLabel"
+					"horizontalAlignment": 2
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/menu/memory.png" )
+					"text": "100% Free mem"
+					"focusable": false
+					"horizontalTextPosition": 4
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+		add( new FormContainer( "javax.swing.JPopupMenu", new FormLayoutManager( class javax.swing.JPopupMenu ) ) {
+			name: "popupDebug"
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "menuDebugTestModalDialog"
+				"text": "Test Modal Dialogs"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuDebugTestModalDialogActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "menuDebugTestCardRenderModesDialog"
+				"text": "Test Card Render Modes"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuDebugTestCardRenderModesDialogActionPerformed", true ) )
+			} )
+		} )
+	}
+}
