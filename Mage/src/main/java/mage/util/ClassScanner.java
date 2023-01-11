@@ -1,5 +1,7 @@
 package mage.util;
 
+import org.apache.log4j.Logger;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,7 +16,7 @@ import java.util.jar.JarInputStream;
  * @author North
  */
 public final class ClassScanner {
-
+    private static final Logger logger = Logger.getLogger(ClassScanner.class);
     private static void checkClassForInclusion(List<Class> cards, Class type, String name, ClassLoader cl) {
         try {
             Class clazz = Class.forName(name, true, cl);
@@ -22,6 +24,7 @@ public final class ClassScanner {
                 cards.add(clazz);
             }
         } catch (ClassNotFoundException ex) {
+//            logger.info
             // ignored
         }
     }
@@ -64,6 +67,7 @@ public final class ClassScanner {
                 cards.addAll(findClassesInJar(classLoader, file, packages, type));
             }
         } catch (IOException ex) {
+            logger.error(ex);
         }
         return cards;
     }
@@ -100,6 +104,7 @@ public final class ClassScanner {
                 }
             }
         } catch (IOException ex) {
+            logger.error(ex);
         }
         return cards;
     }

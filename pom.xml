@@ -17,6 +17,7 @@
             </plugin>
 
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.2.0</version>
                 <configuration>
@@ -26,6 +27,7 @@
 
             <!-- default manifest settings (parent) -->
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
                     <archive>
@@ -162,7 +164,10 @@
             java.version dictates what version of Java to build for.
             This sets the minimum java version required to run the game.
         -->
-        <java.version>17</java.version>
+        <java.version>1.8</java.version>
+        <jdk.version>11</jdk.version>
+        <jdk.home>${env.JAVA_11_HOME}</jdk.home>
+        <test.jdk.home>${jdk.home}</test.jdk.home>
         <mage-version>1.4.50</mage-version>
         <argLine>-Dfile.encoding=UTF-8</argLine>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

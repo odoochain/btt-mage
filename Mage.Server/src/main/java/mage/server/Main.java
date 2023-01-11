@@ -274,7 +274,14 @@ public final class Main {
     static void initStatistics() {
         ServerMessagesUtil.instance.setStartDate(System.currentTimeMillis());
     }
-
+/***
+ *
+ * @author xiaxiaozheng
+ * @date 06:22 1/11/2023
+ * @param config
+ * @param serverLocator
+ * @return boolean
+ **/
     static boolean isAlreadyRunning(ConfigSettings config, InvokerLocator serverLocator) {
         Map<String, String> metadata = new HashMap<>();
         metadata.put(SocketWrapper.WRITE_TIMEOUT, String.valueOf(config.getSocketWriteTimeout()));
@@ -286,6 +293,7 @@ public final class Main {
                 return true;
             }
         } catch (Throwable t) {
+            logger.info(t);
             // assume server is not running
         }
         return false;

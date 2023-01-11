@@ -16,7 +16,7 @@ public class ConfigFactoryTest {
     void loadConfig() {
         final Config config = ConfigFactory.loadFromFile("config/config.xml");
 
-        assertThat(config.getServer().getServerName()).isEqualTo("mage-server");
+        assertThat(config.getServer().getServerName()).isEqualTo("zenman-server");
         assertThat(config.getServer().getPort()).isEqualTo(17171);
     }
 

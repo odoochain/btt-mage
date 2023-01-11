@@ -222,6 +222,9 @@
 
     <properties>
         <manifest.file>src/main/resources/META-INF/MANIFEST.MF</manifest.file>
+        <jdk.version>17</jdk.version>
+        <jdk.home>${env.JAVA_11_HOME}</jdk.home>
+        <javadoc.source>8</javadoc.source>
     </properties>
 
 </project>
