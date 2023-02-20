@@ -1,5 +1,6 @@
 package mage.client.cards;
 
+import java.awt.*;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -7,7 +8,9 @@ import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import java.util.List;
 import java.util.UUID;
+import javax.swing.*;
 import javax.swing.JComponent;
+import javax.swing.border.*;
 import static mage.client.constants.Constants.CONTENT_MAX_XOFFSET;
 import static mage.client.constants.Constants.FRAME_MAX_HEIGHT;
 import static mage.client.constants.Constants.FRAME_MAX_WIDTH;
@@ -149,27 +152,43 @@ public class BigCard extends JComponent {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        scrollPane = new JScrollPane();
+        text = new JTextPane();
 
-        scrollPane = new javax.swing.JScrollPane();
-        text = new javax.swing.JTextPane();
-
+        //======== this ========
+        this.setMinimumSize(new Dimension(FRAME_MAX_WIDTH, FRAME_MAX_HEIGHT));
         setFocusable(false);
-        setMinimumSize(new Dimension(FRAME_MAX_WIDTH, FRAME_MAX_HEIGHT));
-        setName("bigCardPanel"); // NOI18N
-        setPreferredSize(getMinimumSize());
+        setName("bigCardPanel");
         setLayout(null);
 
-        scrollPane.setBackground(new java.awt.Color(220, 220, 220));
-        scrollPane.setBorder(null);
-        scrollPane.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        scrollPane.setViewportBorder(javax.swing.BorderFactory.createEtchedBorder());
+        //======== scrollPane ========
+        {
+            scrollPane.setBackground(new Color(0xdcdcdc));
+            scrollPane.setBorder(null);
+            scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+            scrollPane.setViewportBorder(new EtchedBorder());
 
-        text.setFocusable(false);
-        scrollPane.setViewportView(text);
-
+            //---- text ----
+            text.setFocusable(false);
+            scrollPane.setViewportView(text);
+        }
         add(scrollPane);
         scrollPane.setBounds(20, 220, 210, 130);
-        scrollPane.setBounds(new Rectangle(CONTENT_MAX_XOFFSET, TEXT_MAX_YOFFSET, TEXT_MAX_WIDTH, TEXT_MAX_HEIGHT));
+
+        {
+            // compute preferred size
+            Dimension preferredSize = new Dimension();
+            for(int i = 0; i < getComponentCount(); i++) {
+                Rectangle bounds = getComponent(i).getBounds();
+                preferredSize.width = Math.max(bounds.x + bounds.width, preferredSize.width);
+                preferredSize.height = Math.max(bounds.y + bounds.height, preferredSize.height);
+            }
+            Insets insets = getInsets();
+            preferredSize.width += insets.right;
+            preferredSize.height += insets.bottom;
+            setMinimumSize(preferredSize);
+            setPreferredSize(preferredSize);
+        }
     }// </editor-fold>//GEN-END:initComponents
 
     public void setDefaultImage() {
@@ -178,8 +197,8 @@ public class BigCard extends JComponent {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JScrollPane scrollPane;
-    private javax.swing.JTextPane text;
+    private JScrollPane scrollPane;
+    private JTextPane text;
     // End of variables declaration//GEN-END:variables
 
 }

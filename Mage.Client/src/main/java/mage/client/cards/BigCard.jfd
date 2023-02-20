@@ -1,0 +1,33 @@
+JFDML JFormDesigner: "8.0.1.0.199" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JComponent", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"focusable": false
+			"name": "bigCardPanel"
+			auxiliary() {
+				"JavaCodeGenerator.preInitCode": "${field}.setMinimumSize(new Dimension(FRAME_MAX_WIDTH, FRAME_MAX_HEIGHT));"
+			}
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane"
+				"background": new java.awt.Color( 220, 220, 220, 255 )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"horizontalScrollBarPolicy": 31
+				"viewportBorder": new javax.swing.border.EtchedBorder( 1, null, null )
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "text"
+					"focusable": false
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 220
+				"width": 210
+				"height": 130
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 256, 367 )
+		} )
+	}
+}

@@ -1,8 +1,11 @@
 package mage.client.chat;
 
+import java.awt.event.*;
+import javax.swing.border.*;
 import mage.client.MageFrame;
 import mage.client.SessionHandler;
 import mage.client.cards.BigCard;
+import mage.client.components.*;
 import mage.client.dialog.PreferencesDialog;
 import mage.client.util.GUISizeHelper;
 import mage.view.ChatMessage.MessageColor;
@@ -352,46 +355,52 @@ public class ChatPanelBasic extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        jScrollPaneTxt = new JScrollPane();
+        txtConversation = new ColorPane();
+        txtMessage = new JTextField();
 
-        jScrollPaneTxt = new javax.swing.JScrollPane();
-        txtConversation = new mage.client.components.ColorPane();
-        txtMessage = new javax.swing.JTextField();
+        //======== this ========
 
-        jScrollPaneTxt.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jScrollPaneTxt.setPreferredSize(new java.awt.Dimension(32767, 32767));
+        //======== jScrollPaneTxt ========
+        {
+            jScrollPaneTxt.setBorder(new EmptyBorder(1, 1, 1, 1));
+            jScrollPaneTxt.setPreferredSize(new Dimension(32767, 32767));
 
-        txtConversation.setEditable(false);
-        txtConversation.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        txtConversation.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtConversation.setFocusCycleRoot(false);
-        txtConversation.setMargin(new java.awt.Insets(2, 2, 2, 2));
-        txtConversation.setOpaque(false);
-        jScrollPaneTxt.setViewportView(txtConversation);
+            //---- txtConversation ----
+            txtConversation.setEditable(false);
+            txtConversation.setBorder(new EmptyBorder(1, 1, 1, 1));
+            txtConversation.setFont(new Font("Arial", Font.PLAIN, 14));
+            txtConversation.setFocusCycleRoot(false);
+            txtConversation.setMargin(new Insets(2, 2, 2, 2));
+            txtConversation.setOpaque(false);
+            jScrollPaneTxt.setViewportView(txtConversation);
+        }
 
-        txtMessage.setMaximumSize(new java.awt.Dimension(5000, 70));
-        txtMessage.setMinimumSize(new java.awt.Dimension(6, 70));
-        txtMessage.setName(""); // NOI18N
-        txtMessage.setPreferredSize(new java.awt.Dimension(6, 70));
-        txtMessage.addKeyListener(new java.awt.event.KeyAdapter() {
+        //---- txtMessage ----
+        txtMessage.setMaximumSize(new Dimension(5000, 70));
+        txtMessage.setMinimumSize(new Dimension(6, 70));
+        txtMessage.setName("");
+        txtMessage.setPreferredSize(new Dimension(6, 70));
+        txtMessage.addKeyListener(new KeyAdapter() {
             @Override
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtMessageKeyTyped(evt);
+            public void keyTyped(KeyEvent e) {
+                txtMessageKeyTyped(e);
             }
         });
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        GroupLayout layout = new GroupLayout(this);
+        setLayout(layout);
         layout.setHorizontalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPaneTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                        .addComponent(txtMessage, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            layout.createParallelGroup()
+                .addComponent(jScrollPaneTxt, GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+                .addComponent(txtMessage, GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addComponent(jScrollPaneTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE)
-                                .addGap(0, 0, 0)
-                                .addComponent(txtMessage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            layout.createParallelGroup()
+                .addGroup(layout.createSequentialGroup()
+                    .addComponent(jScrollPaneTxt, GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE)
+                    .addGap(0, 0, 0)
+                    .addComponent(txtMessage, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -416,8 +425,8 @@ public class ChatPanelBasic extends javax.swing.JPanel {
     }//GEN-LAST:event_txtMessageKeyTyped
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JScrollPane jScrollPaneTxt;
-    private mage.client.components.ColorPane txtConversation;
-    private javax.swing.JTextField txtMessage;
+    private JScrollPane jScrollPaneTxt;
+    private ColorPane txtConversation;
+    private JTextField txtMessage;
     // End of variables declaration//GEN-END:variables
 }
