@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="3000" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mage-counter-plugin" />
+        <module name="mage" />
+        <module name="mage-player-aiminimax" />
+        <module name="mage-deck-constructed" />
+        <module name="mage-player-ai-draftbot" />
+        <module name="mage-game-commanderduel" />
+        <module name="mage-client" />
+        <module name="mage-verify" />
+        <module name="mage-tournament-sealed" />
+        <module name="mage-player-human" />
+        <module name="mage-game-commanderfreeforall" />
+        <module name="mage-game-brawlfreeforall" />
+        <module name="mage-tournament-constructed" />
+        <module name="mage-player-ai-ma" />
+        <module name="mage-game-canadianhighlanderduel" />
+        <module name="mage-game-freeformcommanderduel" />
+        <module name="mage-player-ai" />
+        <module name="mage-game-oathbreakerfreeforall" />
+        <module name="mage-game-brawlduel" />
+        <module name="mage-game-freeformcommanderfreeforall" />
+        <module name="mage-game-momirfreeforall" />
+        <module name="mage-common" />
+        <module name="mage-deck-limited" />
+        <module name="mage-game-momirduel" />
+        <module name="mage-game-twoplayerduel" />
+        <module name="mage-sets" />
+        <module name="mage-tournament-boosterdraft" />
+        <module name="mage-server" />
+        <module name="mage-game-tinyleadersduel" />
+        <module name="mage.server.console" />
+        <module name="mage-game-freeformunlimitedcommander" />
+        <module name="mage-player-ai-mcts" />
+        <module name="mage-tests" />
+        <module name="mage-game-oathbreakerduel" />
+        <module name="mage-game-freeforall" />
+        <module name="mage-game-pennydreadfulcommanderfreeforall" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

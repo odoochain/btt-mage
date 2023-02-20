@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Tournament.BoosterDraft/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Sets/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.FreeForAll/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.FreeformCommanderFreeForAll/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.TinyLeadersDuel/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Tournament.Sealed/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Player.AIMinimax/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Player.Human/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Tournament.Constructed/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Deck.Constructed/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.FreeformCommanderDuel/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.CommanderDuel/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Deck.Limited/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.FreeformUnlimitedCommander/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Tests/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss-public-repository" />
+      <option name="name" value="JBoss Repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.MomirDuel/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.BrawlDuel/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss-public-repository" />
+      <option name="name" value="JBoss Repository" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.MomirGame/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Player.AI.MA/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Verify/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.CanadianHighlanderDuel/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.PennyDreadfulCommanderFreeForAll/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Player.AI/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.OathbreakerDuel/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Common/../repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Client/../repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Console/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.TwoPlayerDuel/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.CommanderFreeForAll/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Player.AIMCTS/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Plugins\Mage.Counter.Plugin/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Plugins/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.OathbreakerFreeForAll/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Player.AI.DraftBot/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.BrawlFreeForAll/repository" />
+    </remote-repository>
+  </component>
+</project>
