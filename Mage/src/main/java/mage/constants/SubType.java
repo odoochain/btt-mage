@@ -14,6 +14,10 @@ public enum SubType {
     ARCANE("Arcane", SubTypeSet.SpellType),
     LESSON("Lesson", SubTypeSet.SpellType),
     TRAP("Trap", SubTypeSet.SpellType),
+
+    // Battle subtypes
+    SIEGE("Siege", SubTypeSet.BattleType),
+
     // 205.3i: Lands have their own unique set of subtypes; these subtypes are called land types.
     // Of that list, Forest, Island, Mountain, Plains, and Swamp are the basic land types.
     FOREST("Forest", SubTypeSet.BasicLandType),
@@ -48,6 +52,7 @@ public enum SubType {
     FOOD("Food", SubTypeSet.ArtifactType),
     FORTIFICATION("Fortification", SubTypeSet.ArtifactType),
     GOLD("Gold", SubTypeSet.ArtifactType),
+    INCUBATOR("Incubator", SubTypeSet.ArtifactType),
     POWERSTONE("Powerstone", SubTypeSet.ArtifactType),
     TREASURE("Treasure", SubTypeSet.ArtifactType),
     VEHICLE("Vehicle", SubTypeSet.ArtifactType),
@@ -58,6 +63,7 @@ public enum SubType {
     ALLY("Ally", SubTypeSet.CreatureType),
     ANGEL("Angel", SubTypeSet.CreatureType),
     ANTELOPE("Antelope", SubTypeSet.CreatureType),
+    ANZELLAN("Anzellan", SubTypeSet.CreatureType, true), // Star Wars
     AQUALISH("Aqualish", SubTypeSet.CreatureType, true), // Star Wars
     APE("Ape", SubTypeSet.CreatureType),
     ARCONA("Arcona", SubTypeSet.CreatureType, true),
@@ -122,7 +128,8 @@ public enum SubType {
     CYBORG("Cyborg", SubTypeSet.CreatureType, true), // Star Wars
     CYCLOPS("Cyclops", SubTypeSet.CreatureType),
     // D
-    DATHOMIRIAN("Dathomirian", SubTypeSet.CreatureType, true), // Star Wars
+    DALEK("Dalek", SubTypeSet.CreatureType),
+    DATHOMIRIAN("Dathomirian", SubTypeSet.CreatureType, true), // Star Wars,
     DAUTHI("Dauthi", SubTypeSet.CreatureType),
     DEMIGOD("Demigod", SubTypeSet.CreatureType),
     DEMON("Demon", SubTypeSet.CreatureType),
@@ -147,7 +154,6 @@ public enum SubType {
     ELEMENTAL("Elemental", SubTypeSet.CreatureType),
     ELEPHANT("Elephant", SubTypeSet.CreatureType),
     ELF("Elf", SubTypeSet.CreatureType),
-    ELVES("Elves", SubTypeSet.CreatureType, true), // Un-sets
     ELK("Elk", SubTypeSet.CreatureType),
     EMPLOYEE("Employee", SubTypeSet.CreatureType),
     EYE("Eye", SubTypeSet.CreatureType),
@@ -442,6 +448,7 @@ public enum SubType {
     GARRUK("Garruk", SubTypeSet.PlaneswalkerType),
     GIDEON("Gideon", SubTypeSet.PlaneswalkerType),
     GRIST("Grist", SubTypeSet.PlaneswalkerType),
+    GUFF("Guff", SubTypeSet.PlaneswalkerType),
     HUATLI("Huatli", SubTypeSet.PlaneswalkerType),
     JACE("Jace", SubTypeSet.PlaneswalkerType),
     JARED("Jared", SubTypeSet.PlaneswalkerType),
@@ -465,6 +472,7 @@ public enum SubType {
     OBI_WAN("Obi-Wan", SubTypeSet.PlaneswalkerType, true), // Star Wars
     OKO("Oko", SubTypeSet.PlaneswalkerType),
     RAL("Ral", SubTypeSet.PlaneswalkerType),
+    REY("Rey", SubTypeSet.PlaneswalkerType, true),  // Star Wars,
     ROWAN("Rowan", SubTypeSet.PlaneswalkerType),
     SAHEELI("Saheeli", SubTypeSet.PlaneswalkerType),
     SAMUT("Samut", SubTypeSet.PlaneswalkerType),
@@ -486,6 +494,7 @@ public enum SubType {
     VENSER("Venser", SubTypeSet.PlaneswalkerType),
     VIVIEN("Vivien", SubTypeSet.PlaneswalkerType),
     VRASKA("Vraska", SubTypeSet.PlaneswalkerType),
+    VRONOS("Vronos", SubTypeSet.PlaneswalkerType),
     WILL("Will", SubTypeSet.PlaneswalkerType),
     WINDGRACE("Windgrace", SubTypeSet.PlaneswalkerType),
     WRENN("Wrenn", SubTypeSet.PlaneswalkerType),
@@ -620,6 +629,8 @@ public enum SubType {
                 return mageObject.isPlaneswalker(game);
             case SpellType:
                 return mageObject.isInstantOrSorcery(game);
+            case BattleType:
+                return mageObject.isBattle(game);
         }
         return false;
     }
@@ -634,12 +645,10 @@ public enum SubType {
 
     public static Set<SubType> getPlaneswalkerTypes() {
         return subTypeSetMap.get(SubTypeSet.PlaneswalkerType);
-
     }
 
     public static Set<SubType> getCreatureTypes() {
         return subTypeSetMap.get(SubTypeSet.CreatureType);
-
     }
 
     public static Set<SubType> getBasicLands() {
@@ -648,6 +657,10 @@ public enum SubType {
 
     public static Set<SubType> getLandTypes() {
         return landTypes;
+    }
+
+    public static Set<SubType> getBattleTypes() {
+        return subTypeSetMap.get(SubTypeSet.BattleType);
     }
 
     public static Set<SubType> getBySubTypeSet(SubTypeSet subTypeSet) {
