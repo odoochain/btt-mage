@@ -23,6 +23,7 @@ import mage.game.events.GameEvent;
 import mage.game.permanent.Permanent;
 import mage.players.Player;
 import mage.target.targetpointer.FixedTarget;
+import mage.util.CardUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -115,7 +116,7 @@ public class SuspendAbility extends SpecialAction {
      * Gives the card the SuspendAbility
      *
      * @param suspend - amount of time counters, if Integer.MAX_VALUE is set
-     *                there will be {X} costs and X counters added
+     *                there will be {X} costs and X counters added with X can't be 0 limit
      * @param cost    - null is used for temporary gained suspend ability
      * @param card    - card that has the suspend ability
      */
@@ -140,16 +141,15 @@ public class SuspendAbility extends SpecialAction {
                     .append(cost.getText()).append(suspend
                             == Integer.MAX_VALUE ? ". X can't be 0." : "");
             if (!shortRule) {
-                sb.append(" <i>(Rather than cast this card from your hand, pay ")
+                sb.append(" <i>(Rather than cast this card from your hand, you may pay ")
                         .append(cost.getText())
                         .append(" and exile it with ")
                         .append((suspend == 1 ? "a time counter" : (suspend == Integer.MAX_VALUE
-                                ? "X time counters" : suspend + " time counters")))
+                                ? "X time counters" : CardUtil.numberToText(suspend) + " time counters")))
                         .append(" on it.")
                         .append(" At the beginning of your upkeep, remove a time counter. "
                                 + "When the last is removed, cast it without paying its mana cost.")
-                        .append(card.isCreature() ? " If you play it this way and it's a creature, "
-                                + "it gains haste until you lose control of it." : "")
+                        .append(card.isCreature() ? " It has haste." : "")
                         .append(")</i>");
             }
             if (card.getManaCost().isEmpty()) {
@@ -438,7 +438,7 @@ class SuspendBeginningOfUpkeepInterveningIfTriggeredAbility extends ConditionalI
 
     }
 
-    public SuspendBeginningOfUpkeepInterveningIfTriggeredAbility(final SuspendBeginningOfUpkeepInterveningIfTriggeredAbility effect) {
+    private SuspendBeginningOfUpkeepInterveningIfTriggeredAbility(final SuspendBeginningOfUpkeepInterveningIfTriggeredAbility effect) {
         super(effect);
     }
 
