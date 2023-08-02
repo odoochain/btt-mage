@@ -109,6 +109,11 @@
     <remote-repository>
       <option name="id" value="local-project-repo" />
       <option name="name" value="local-project-repo" />
+      <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.CustomPillarOfTheParunsDuel/repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="local-project-repo" />
+      <option name="name" value="local-project-repo" />
       <option name="url" value="file://D:\Documents\Z-xiaozheng\btt_mage\Mage.Server.Plugins\Mage.Game.BrawlDuel/repository" />
     </remote-repository>
     <remote-repository>

@@ -11,6 +11,7 @@
         <module name="mage" />
         <module name="mage-player-aiminimax" />
         <module name="mage-deck-constructed" />
+        <module name="mage-game-custompillaroftheparunsduel" />
         <module name="mage-player-ai-draftbot" />
         <module name="mage-game-commanderduel" />
         <module name="mage-client" />
