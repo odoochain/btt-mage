@@ -79,6 +79,7 @@ public final class TalesOfMiddleEarthCommander extends ExpansionSet {
         cards.add(new SetCardInfo("Drowned Catacomb", 305, Rarity.RARE, mage.cards.d.DrownedCatacomb.class));
         cards.add(new SetCardInfo("Dusk // Dawn", 166, Rarity.RARE, mage.cards.d.DuskDawn.class));
         cards.add(new SetCardInfo("Earthquake", 214, Rarity.RARE, mage.cards.e.Earthquake.class));
+        cards.add(new SetCardInfo("Elrond of the White Council", 51, Rarity.RARE, mage.cards.e.ElrondOfTheWhiteCouncil.class));
         cards.add(new SetCardInfo("Elvish Archdruid", 237, Rarity.RARE, mage.cards.e.ElvishArchdruid.class));
         cards.add(new SetCardInfo("Elvish Mystic", 238, Rarity.COMMON, mage.cards.e.ElvishMystic.class));
         cards.add(new SetCardInfo("Elvish Piper", 239, Rarity.RARE, mage.cards.e.ElvishPiper.class));
@@ -133,6 +134,7 @@ public final class TalesOfMiddleEarthCommander extends ExpansionSet {
         cards.add(new SetCardInfo("Great Oak Guardian", 247, Rarity.UNCOMMON, mage.cards.g.GreatOakGuardian.class));
         cards.add(new SetCardInfo("Grey Host Reinforcements", 14, Rarity.RARE, mage.cards.g.GreyHostReinforcements.class, NON_FULL_USE_VARIOUS));
         cards.add(new SetCardInfo("Grey Host Reinforcements", 98, Rarity.RARE, mage.cards.g.GreyHostReinforcements.class, NON_FULL_USE_VARIOUS));
+        cards.add(new SetCardInfo("Grima, Saruman's Footman", 57, Rarity.RARE, mage.cards.g.GrimaSarumansFootman.class));
         cards.add(new SetCardInfo("Growth Spiral", 267, Rarity.COMMON, mage.cards.g.GrowthSpiral.class));
         cards.add(new SetCardInfo("Guttersnipe", 220, Rarity.UNCOMMON, mage.cards.g.Guttersnipe.class));
         cards.add(new SetCardInfo("Gwaihir, Greatest of the Eagles", 15, Rarity.RARE, mage.cards.g.GwaihirGreatestOfTheEagles.class, NON_FULL_USE_VARIOUS));
@@ -266,6 +268,7 @@ public final class TalesOfMiddleEarthCommander extends ExpansionSet {
         cards.add(new SetCardInfo("Taunt from the Rampart", 71, Rarity.RARE, mage.cards.t.TauntFromTheRampart.class));
         cards.add(new SetCardInfo("Terramorphic Expanse", 337, Rarity.COMMON, mage.cards.t.TerramorphicExpanse.class));
         cards.add(new SetCardInfo("The Balrog of Moria", 46, Rarity.RARE, mage.cards.t.TheBalrogOfMoria.class));
+        cards.add(new SetCardInfo("The Black Gate", 80, Rarity.RARE, mage.cards.t.TheBlackGate.class));
         cards.add(new SetCardInfo("The Gaffer", 12, Rarity.RARE, mage.cards.t.TheGaffer.class));
         cards.add(new SetCardInfo("The Great Henge", 348, Rarity.MYTHIC, mage.cards.t.TheGreatHenge.class));
         cards.add(new SetCardInfo("The Ozolith", 351, Rarity.MYTHIC, mage.cards.t.TheOzolith.class));
