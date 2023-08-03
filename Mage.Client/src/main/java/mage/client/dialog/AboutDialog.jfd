@@ -1,0 +1,55 @@
+JFDML JFormDesigner: "8.1.1.0.298" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "mage.client.dialog.MageDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp scrollDevs:::::x, seq t {comp btnWhatsNew:::p:100:p, space :::x, comp btnOk:::p:100:p}, seq {par l {seq l {comp jLabel1:::p::p, space :::p, comp lblVersion:::p::p}, seq {par l {comp jLabel2::l:p::p, comp labelDevs::l:p::p}, space :::p, comp textPane1:::p::p}}, space :0:67:x}}, space :::p}}"
+			"$verticalGroup": "par l {seq t {space :::p, par b {comp jLabel1::b:p::p, comp lblVersion::b:p::p}, par l {seq {space :::p, comp jLabel2:::p::p, space :::p, comp labelDevs:::p::p, space :::p, comp scrollDevs::::165:x, space :::p, par b {comp btnOk::b:p:30:p, comp btnWhatsNew::b:p:30:p}, space :::p}, seq l {space :p:14:p, comp textPane1:::p::p, space :::x}}}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"maximizable": true
+			"title": "About XMage"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnOk"
+				"text": "Close"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnOkActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel1"
+				"text": "XMage client"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblVersion"
+				"text": "0.0.0"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel2"
+				"text": "Courtesy: BetaSteward@googlemail.com. Site: http://xmage.cn/"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnWhatsNew"
+				"text": "What's new"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnWhatsNewActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollDevs"
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "panelDevs"
+					"editable": false
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelDevs"
+				"text": "Developers:"
+			} )
+			add( new FormComponent( "javax.swing.JTextPane" ) {
+				name: "textPane1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

@@ -1,5 +1,6 @@
 package mage.client.dialog;
 
+import java.awt.*;
 import mage.client.MageFrame;
 import mage.utils.MageVersion;
 
@@ -56,90 +57,103 @@ public class AboutDialog extends MageDialog {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        btnOk = new JButton();
+        jLabel1 = new JLabel();
+        lblVersion = new JLabel();
+        jLabel2 = new JLabel();
+        btnWhatsNew = new JButton();
+        scrollDevs = new JScrollPane();
+        panelDevs = new JTextPane();
+        labelDevs = new JLabel();
+        textPane1 = new JTextPane();
 
-        btnOk = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        lblVersion = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        btnWhatsNew = new javax.swing.JButton();
-        scrollDevs = new javax.swing.JScrollPane();
-        panelDevs = new javax.swing.JTextPane();
-        labelDevs = new javax.swing.JLabel();
-
+        //======== this ========
+        setVisible(true);
         setMaximizable(true);
         setTitle("About XMage");
+        Container contentPane = getContentPane();
 
+        //---- btnOk ----
         btnOk.setText("Close");
-        btnOk.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOkActionPerformed(evt);
-            }
-        });
+        btnOk.addActionListener(e -> btnOkActionPerformed(e));
 
+        //---- jLabel1 ----
         jLabel1.setText("XMage client");
 
+        //---- lblVersion ----
         lblVersion.setText("0.0.0");
 
-        jLabel2.setText("Courtesy: BetaSteward@googlemail.com. Site: http://xmage.de/");
+        //---- jLabel2 ----
+        jLabel2.setText("Courtesy: BetaSteward@googlemail.com. Site: http://xmage.cn/");
 
+        //---- btnWhatsNew ----
         btnWhatsNew.setText("What's new");
-        btnWhatsNew.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnWhatsNewActionPerformed(evt);
-            }
-        });
+        btnWhatsNew.addActionListener(e -> btnWhatsNewActionPerformed(e));
 
-        scrollDevs.setBorder(null);
+        //======== scrollDevs ========
+        {
+            scrollDevs.setBorder(null);
 
-        panelDevs.setEditable(false);
-        scrollDevs.setViewportView(panelDevs);
+            //---- panelDevs ----
+            panelDevs.setEditable(false);
+            scrollDevs.setViewportView(panelDevs);
+        }
 
+        //---- labelDevs ----
         labelDevs.setText("Developers:");
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(scrollDevs)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                .addComponent(btnWhatsNew, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(btnOk, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addGroup(layout.createSequentialGroup()
-                                                                .addComponent(jLabel1)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(lblVersion))
-                                                        .addComponent(jLabel2)
-                                                        .addComponent(labelDevs))
-                                                .addGap(0, 80, Short.MAX_VALUE)))
-                                .addContainerGap())
+        GroupLayout contentPaneLayout = new GroupLayout(contentPane);
+        contentPane.setLayout(contentPaneLayout);
+        contentPaneLayout.setHorizontalGroup(
+            contentPaneLayout.createParallelGroup()
+                .addGroup(contentPaneLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addGroup(contentPaneLayout.createParallelGroup()
+                        .addComponent(scrollDevs)
+                        .addGroup(GroupLayout.Alignment.TRAILING, contentPaneLayout.createSequentialGroup()
+                            .addComponent(btnWhatsNew, GroupLayout.PREFERRED_SIZE, 100, GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnOk, GroupLayout.PREFERRED_SIZE, 100, GroupLayout.PREFERRED_SIZE))
+                        .addGroup(contentPaneLayout.createSequentialGroup()
+                            .addGroup(contentPaneLayout.createParallelGroup()
+                                .addGroup(contentPaneLayout.createSequentialGroup()
+                                    .addComponent(jLabel1)
+                                    .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(lblVersion))
+                                .addGroup(contentPaneLayout.createSequentialGroup()
+                                    .addGroup(contentPaneLayout.createParallelGroup()
+                                        .addComponent(jLabel2)
+                                        .addComponent(labelDevs))
+                                    .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(textPane1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
+                            .addGap(0, 67, Short.MAX_VALUE)))
+                    .addContainerGap())
         );
-        layout.setVerticalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel1)
-                                        .addComponent(lblVersion))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(labelDevs)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(scrollDevs, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(btnOk, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(btnWhatsNew, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addContainerGap())
+        contentPaneLayout.setVerticalGroup(
+            contentPaneLayout.createParallelGroup()
+                .addGroup(GroupLayout.Alignment.TRAILING, contentPaneLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel1)
+                        .addComponent(lblVersion))
+                    .addGroup(contentPaneLayout.createParallelGroup()
+                        .addGroup(contentPaneLayout.createSequentialGroup()
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel2)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(labelDevs)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(scrollDevs, GroupLayout.DEFAULT_SIZE, 165, Short.MAX_VALUE)
+                            .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(contentPaneLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                                .addComponent(btnOk, GroupLayout.PREFERRED_SIZE, 30, GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnWhatsNew, GroupLayout.PREFERRED_SIZE, 30, GroupLayout.PREFERRED_SIZE))
+                            .addContainerGap())
+                        .addGroup(contentPaneLayout.createSequentialGroup()
+                            .addGap(14, 14, 14)
+                            .addComponent(textPane1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                            .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
-
-        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOkActionPerformed
@@ -151,14 +165,15 @@ public class AboutDialog extends MageDialog {
     }//GEN-LAST:event_btnWhatsNewActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnOk;
-    private javax.swing.JButton btnWhatsNew;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel labelDevs;
-    private javax.swing.JLabel lblVersion;
-    private javax.swing.JTextPane panelDevs;
-    private javax.swing.JScrollPane scrollDevs;
+    private JButton btnOk;
+    private JLabel jLabel1;
+    private JLabel lblVersion;
+    private JLabel jLabel2;
+    private JButton btnWhatsNew;
+    private JScrollPane scrollDevs;
+    private JTextPane panelDevs;
+    private JLabel labelDevs;
+    private JTextPane textPane1;
     // End of variables declaration//GEN-END:variables
 
 }
